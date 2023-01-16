@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="src\css\reset.css">
+    <link rel="stylesheet" type="text/css" href="src\css\index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="navbar" class="navbar__container"></div>
+        <div class="main">
+            <div id="container" class="container">
+                <div class="form"></div>
+            </div>
+            <div id="sidebar" class="sidebar">
+                <img class="sidebar__img " src="src\assets\pl.png" onclick="changeLanguage('PL')"
+                    class="sidebar__img" />
+                <img class="sidebar__img " src="src\assets\eng.png" onclick="changeLanguage('EN')" />
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="src\js\index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+
+</html>

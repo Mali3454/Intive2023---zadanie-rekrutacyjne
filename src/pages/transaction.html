@@ -1,0 +1,79 @@
+<div id="transaction" lang="PL" class="transaction">
+    <div id="charts" class="charts">
+        <div class="pieChart">
+            <canvas id="pieChart" language="PL"></canvas>
+        </div>
+        <div class="barChart barChart__mobile">
+            <canvas id="barChart" language="PL"></canvas>
+        </div>
+    </div>
+    <div id="history" class="history" language="PL">
+        <div class="history__searchBar">
+            <select class="select" id="selectBar">
+                <option class="option" value='0'>Wszystko</option>
+                <option class="option" value='1'>Wpływy - inne</option>
+                <option class="option" value='2'>Wydatki - zakupy</option>
+                <option class="option" value='3'>Wpływy - wynagrodzenie</option>
+                <option class="option" value='4'>Wydatki - inne"</option>
+            </select>
+            <input class="history__input" type="search" id="searchBar" placeholder="Wpisz szukaną frazę">
+        </div>
+        <div class="table">
+            <table id="transactions-table">
+                <thead>
+                    <tr class="table__header">
+                        <th class="tr__mobile-none">Data</th>
+                        <th>Typ</th>
+                        <th>Opis</th>
+                        <th>Kwota</th>
+                        <th class="tr__mobile-none">Saldo</th>
+                    </tr>
+                </thead>
+                <tbody language="PL" class="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<div id="transaction" lang="EN" class="transaction">
+    <div id="charts" class="charts">
+        <div class="pieChart">
+            <canvas id="pieChart" language="EN"></canvas>
+        </div>
+        <div class="barChart barChart__mobile">
+            <canvas id="barChart" language="EN"></canvas>
+        </div>
+    </div>
+    <div id="history" class="history" language="EN">
+        <div class="history__searchBar">
+            <select class="select" id="selectBar">
+                <option value='0'>All</option>
+                <option value='1'>Income - others</option>
+                <option value='2'>Expenses - purchases</option>
+                <option value='3'>Income - salary</option>
+                <option value='4'>Expenses - others"</option>
+            </select>
+            <input class="history__input" type="search" id="searchBar" placeholder="Enter your search term">
+        </div>
+        <div class="table">
+            <table id="transactions-table">
+                <thead>
+                    <tr class="table__header">
+                        <th class="tr__mobile-none">Date</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th class="tr__mobile-none">Balance</th>
+                    </tr>
+                </thead>
+                <tbody language="EN" class="tbody">
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>
