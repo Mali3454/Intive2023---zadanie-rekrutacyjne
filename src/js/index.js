@@ -179,6 +179,40 @@ document.querySelector('#container').addEventListener('mousemove', e => {
 	}
 })
 
+document.querySelector('#container').addEventListener('touchmove', e => {
+	if (e.touches[0].pageY < 540 && window.location.pathname === '/transaction') {
+		const touchX = e.touches[0].clientX
+		const windowWidth = window.innerWidth
+
+		if (touchX < windowWidth / 2) {
+			const pieCharts = document.querySelectorAll('.pieChart')
+			pieCharts.forEach(pieChart => {
+				pieChart.classList.add('chart-active')
+				pieChart.classList.remove('chart-inactive')
+			})
+
+			const barCharts = document.querySelectorAll('.barChart')
+			barCharts.forEach(barChart => {
+				barChart.classList.remove('chart-active')
+				barChart.classList.add('chart-inactive')
+			})
+		} else {
+			const pieCharts = document.querySelectorAll('.pieChart')
+			pieCharts.forEach(pieChart => {
+				pieChart.classList.remove('chart-active')
+				pieChart.classList.add('chart-inactive')
+			})
+
+			const barCharts = document.querySelectorAll('.barChart')
+			barCharts.forEach(barChart => {
+				barChart.classList.remove('barChart__mobile')
+				barChart.classList.add('chart-active')
+				barChart.classList.remove('chart-inactive')
+			})
+		}
+	}
+})
+
 window.changeLanguage = changeLanguage
 window.onhashchange = render
 window.onpopstate = render

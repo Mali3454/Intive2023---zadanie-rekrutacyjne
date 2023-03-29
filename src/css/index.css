@@ -444,3 +444,55 @@ table {
 		width: 400px;
 	}
 }
+
+@media (max-width: 576px) {
+	.navbar {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.navbar__btn-wrapper {
+		margin-top: 10px;
+		flex-direction: column;
+	}
+
+	.home__small {
+		font-size: 1.2rem;
+	}
+
+	.home__h1 {
+		font-size: 48px;
+		line-height: 40px;
+	}
+
+	.sidebar {
+		z-index: 100;
+	}
+
+	.btn {
+		margin-top: 10px;
+	}
+
+	.form__wrapper {
+		margin-top: 50px;
+	}
+
+	.transaction {
+		margin-top: 50px;
+	}
+
+	.charts {
+		z-index: 100;
+		margin-bottom: -10px;
+	}
+
+	.history__searchBar {
+		display: flex;
+		flex-direction: column;
+		z-index: 120;
+	}
+
+	.form__wrapper{
+		margin-left: -20px;
+	}
+}
