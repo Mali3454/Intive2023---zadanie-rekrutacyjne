@@ -101,7 +101,7 @@ body {
 .sidebar {
 	width: 50px;
 	height: 100vh;
-	background: linear-gradient(#00545d, #000729);
+	background: linear-gradient(#00545d, rgba(0, 7, 41, 0));
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -446,18 +446,22 @@ table {
 }
 
 @media (max-width: 576px) {
+	.wrapper {
+		height: 100vh;
+	}
+
 	.navbar {
 		flex-direction: column;
 		align-items: start;
 	}
 
 	.navbar__btn-wrapper {
-		margin-top: 10px;
+		margin-top: 0px;
 		flex-direction: column;
 	}
 
 	.home__small {
-		font-size: 1.2rem;
+		font-size: 1rem;
 	}
 
 	.home__h1 {
@@ -474,7 +478,7 @@ table {
 	}
 
 	.form__wrapper {
-		margin-top: 50px;
+		margin-top: 60px;
 	}
 
 	.transaction {
@@ -492,7 +496,45 @@ table {
 		z-index: 120;
 	}
 
-	.form__wrapper{
+	.form__wrapper {
+		margin-left: -20px;
+	}
+
+	.h1__form {
+		font-size: 30px;
+		margin-bottom: -20px;
+	}
+
+	label {
+		font-size: 16px;
+	}
+
+	.input__field {
+		margin-top: 5px;
+	}
+
+	.btn__form {
+		margin-top: -2px;
+	}
+
+	.input__info {
+		font-size: 12px;
+	}
+
+	.input {
+		height: 30px;
+	}
+
+	.wrapper {
+		overflow-y: scroll;
+	}
+
+	.sidebar {
+		height: 100%;
+	}
+
+	.barChart {
+		width: 350px;
 		margin-left: -20px;
 	}
 }
